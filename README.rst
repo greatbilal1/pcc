@@ -71,6 +71,10 @@ Chapter 19: Advanced Topics
 Chapter 20: Conclusion
    - Provides a summary of the book and suggestions for further learning. This chapter provides a summary of the key concepts covered in the book, and offers suggestions for further learning and resources to help you continue your journey with Python programming and game development. The chapter will also include tips on how to improve your coding skills and best practices for writing clean, maintainable code.
 
+License
+-------
+
+This repository is licensed under the AGPL 3.0 license. This means that you are free to use, share, and modify the content of this repository, as long as you provide attribution and make your contributions available under the same license.
 
 
 
