@@ -1,6 +1,6 @@
 car = ["Toyota", "Tesla"]
 motorcycle = ["Harley Davidson", "Honda"]
-print(f"I would like to own a {car[0]} car.")
-print(f"I would like to own a {car[1]} car.")
-print(f"I would like to own a {motorcycle[0]} motorcycle.")
-print(f"I would like to own a {motorcycle[1]} motorcycle.")
+print(f"I would like to own {car[0]} cars.")
+print(f"I would like to own {car[1]} cars.")
+print(f"I would like to own {motorcycle[0]} motorcycles.")
+print(f"I would like to own {motorcycle[1]} motorcycles.")
