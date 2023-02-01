@@ -14,7 +14,7 @@ while True:
     if playerFruit == "n":
         exit()
 
-    if playerFruit in favorite_fruits:
+    if playerFruit.lower() in favorite_fruits:
         print(f"You really like {playerFruit}")
     else:
         print(f"You don't really like {playerFruit}")
