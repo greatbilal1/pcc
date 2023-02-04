@@ -4,5 +4,5 @@ def describe_city(city="jhansi", country="india"):
 
 describe_city()
 describe_city("tokyo", "japan")
-describe_city(country="usa", city="sillicon valley")
+describe_city(country="u.s.a.", city="sillicon valley")
 describe_city(country="india", city="new delhi")
