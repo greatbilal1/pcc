@@ -1,5 +1,5 @@
 def describe_city(city="jhansi", country="india"):
-    print(f"{city.title()} is in {country.title()}")
+    print(f"{city.title()} is in {country.title()}.")
 
 
 describe_city()
