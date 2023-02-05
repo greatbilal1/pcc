@@ -29,7 +29,7 @@ amit = User("Amit", "Rajpoot", 21, "Indian", "Jhansi")
 amit.describe_user()
 amit.greet_user()
 
-ravikant = User("Ravikant", "Rajpoot", 21, "Indian", "Jhansi")
+ravikant = User("Ravikant", "Rajpoot", 21, "Indian", "Jhansi","Singh")
 ravikant.describe_user()
 ravikant.greet_user()
 
