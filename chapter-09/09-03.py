@@ -1,11 +1,16 @@
 class User:
-    def __init__(self, first_name, last_name, age, nationality, city):
-        self.first_name = first_name
+    def __init__(self, first_name, last_name, age, nationality, city, middle_name=""):
+        self.first_name = first_name + " "
         self.last_name = last_name
         self.age = age
         self.nationality = nationality
         self.city = city
-        self.full_name = first_name + last_name
+
+        if middle_name:
+            self.middle_name = middle_name + " "
+            self.full_name = self.first_name + self.middle_name + self.last_name
+        else:
+            self.full_name = self.first_name + self.last_name
 
     def describe_user(self):
         print(
@@ -27,3 +32,7 @@ amit.greet_user()
 ravikant = User("Ravikant", "Rajpoot", 21, "Indian", "Jhansi")
 ravikant.describe_user()
 ravikant.greet_user()
+
+kamala = User("Kamala", "Rajpoot", 21, "Indian", "Jhansi", "Devi")
+kamala.describe_user()
+kamala.greet_user()
