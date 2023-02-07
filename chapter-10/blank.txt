@@ -1,0 +1,3 @@
+I'm learning python from Python Crash Course edition 3
+I'm having real fun as I'm grewing up at a rapid pace
+So far, I have completed till chapter 9.
