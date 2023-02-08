@@ -5,7 +5,7 @@ contents = path.read_text()
 
 pi_string = ""
 for line in contents.splitlines():
-    pi_string += line.strip()
     print(line)
+    pi_string += line.strip()
 
 print(pi_string)
