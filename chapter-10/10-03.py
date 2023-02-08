@@ -9,3 +9,6 @@ for line in contents.splitlines():
     pi_string += line.strip()
 
 print(pi_string)
+
+
+print(repr(pi_string))
