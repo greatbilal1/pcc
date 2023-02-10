@@ -3,7 +3,7 @@ from pathlib import Path
 contents = ""
 while True:
     name = input('What\'s your name? \n(Enter "q" to exit)\n')
-    contents +=  + "\n"
+    contents += name + "\n"
     if name == "q":
         break
 
