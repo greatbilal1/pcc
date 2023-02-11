@@ -6,6 +6,8 @@ def get_stored_favnum(path):
     """Get stored favorite number if available."""
     if path.exists():
         contents = path.read_text()
+        if contents == "":
+            return None
         favnum = json.loads(contents)
         return favnum
     else:
