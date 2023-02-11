@@ -26,6 +26,7 @@ def get_stored_favnum(path):
         if contents == "":
             return None
         favnum = json.loads(contents)
+        print(favnum)
         return favnum
     else:
         return None
