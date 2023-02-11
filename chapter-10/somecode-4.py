@@ -7,4 +7,4 @@ path = Path("username.json")
 contents = json.dumps(username)
 path.write_text(contents)
 
-print(f"We will remember you when you come back, {username}")
+print(f"We will remember you when you come back, {username}!")
