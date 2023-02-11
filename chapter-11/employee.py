@@ -4,9 +4,9 @@ class Employee:
         self.last = last
         self.salary = salary
 
-    def give_raise(self):
-        self.salary += 5000
+    def give_raise(self, raise_salary=5000):
+        self.salary += raise_salary
 
 
-# emp = Employee("Alzy", "Welzy")
-# print(emp.salary)
+emp = Employee("Alzy", "Welzy")
+print(emp.salary)
