@@ -1,6 +1,19 @@
 from pathlib import Path
 import json
 
+# def get_stored_favnum(path):
+#     """Get stored favorite number if available."""
+#     if path.exists():
+#         contents = path.read_text()
+#         try:
+#             favnum = json.loads(contents)
+#             return favnum
+#         except json.decoder.JSONDecodeError as e:
+#             print(f"An error occurred while reading the file: {e}")
+#             return None
+#     else:
+#         return None
+
 
 def get_stored_favnum(path):
     """Get stored favorite number if available."""
