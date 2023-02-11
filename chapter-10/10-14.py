@@ -15,6 +15,10 @@ import json
 #         return None
 
 
+def allNames(path):
+    pass
+
+
 def get_stored_favnum(path):
     """Get stored favorite number if available."""
     if path.exists():
