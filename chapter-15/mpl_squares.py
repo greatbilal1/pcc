@@ -14,6 +14,5 @@ ax.set_ylabel("Square of Value", fontsize=14)
 # Set size of tick labels.
 ax.tick_params(labelsize=14)
 
-ax.plot(squares)
 
 plt.show()
