@@ -30,7 +30,8 @@ class RandomWalk:
             self.x_values.append(x)
             self.y_values.append(y)
 
-    def get_step(sel):
+    @staticmethod
+    def get_step():
         x_direction = choice([1, -1])
         x_distance = choice([0, 1, 2, 3, 4])
         x_step = x_direction * x_distance
