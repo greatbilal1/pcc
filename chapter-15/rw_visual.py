@@ -19,7 +19,7 @@ while True:
         c=point_numbers,
         cmap=plt.cm.Blues,
         edgecolors="none",
-        s=15,
+        s=1,
     )
     ax.set_aspect("equal")
 
