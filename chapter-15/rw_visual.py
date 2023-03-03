@@ -2,6 +2,9 @@ import matplotlib.pyplot as plt
 
 from random_walk import RandomWalk
 
+# Keep making new walks, as long as the program is active.
+
+
 # Make a random walk.
 rw = RandomWalk()
 rw.fill_walk()
