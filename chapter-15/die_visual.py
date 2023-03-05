@@ -1,3 +1,5 @@
+import plotly.express as px
+
 from die import Die
 
 # Create a D6
