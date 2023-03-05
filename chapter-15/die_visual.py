@@ -5,6 +5,7 @@ from die import Die
 # Create a D6
 die = Die()
 
+
 # Make some rolls, and store results in a list.
 results = []
 for roll_num in range(1000):
@@ -22,3 +23,7 @@ for value in poss_results:
     frequencies.append(frequency)
 
 print(frequencies)
+
+# Visualize the results.
+fig = px.bar(x=poss_results, y=frequencies)
+fig.show()
