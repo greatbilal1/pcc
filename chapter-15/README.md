@@ -1,1 +1,3 @@
-\# Chapter 15
+# Chapter 15
+## Summary
+In this chapter, you learned to generate datasets and create visualizations of that data. You created simple plots with Matplotlib and used a scatter plot to explore random walks. You also created a histogram with Plotly, and used it to explore the results of rolling dice of different sizes.Generating your own datasets with code is an interesting and power-ful way to model and explore a wide variety of real-world situations. As you continue to work through the data visualization projects that follow, keep an eye out for situations you might be able to model with code. Look at the visualizations you see in news media, and see if you can identify those that were generated using methods similar to the ones you’re learning in these projects.In Chapter 16, you’ll download data from online sources and continue to use Matplotlib and Plotly to explore that data.
