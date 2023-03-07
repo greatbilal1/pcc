@@ -1,0 +1,5 @@
+[console_scripts]
+dvc = dvc.cli:main
+
+[fsspec.specs]
+dvc = dvc.api:DVCFileSystem

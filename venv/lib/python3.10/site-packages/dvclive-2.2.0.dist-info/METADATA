@@ -1,0 +1,217 @@
+Metadata-Version: 2.1
+Name: dvclive
+Version: 2.2.0
+Summary: Metric logger for ML projects.
+Home-page: https://github.com/iterative/dvclive
+Maintainer-email: support@dvc.org
+License: Apache-2.0
+Project-URL: Documentation, https://dvc.org/doc/dvclive
+Project-URL: Source, https://github.com/iterative/dvclive
+Keywords: data-science,metrics,machine-learning,developer-tools,ai
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: dvc-render[table] (>=0.1.2)
+Requires-Dist: ruamel.yaml (>=0.17.11)
+Requires-Dist: dvc-studio-client (>=0.4.0)
+Provides-Extra: all
+Requires-Dist: numpy ; extra == 'all'
+Requires-Dist: pillow ; extra == 'all'
+Requires-Dist: mmcv ; extra == 'all'
+Requires-Dist: tensorflow ; extra == 'all'
+Requires-Dist: xgboost ; extra == 'all'
+Requires-Dist: lightgbm ; extra == 'all'
+Requires-Dist: transformers ; extra == 'all'
+Requires-Dist: datasets ; extra == 'all'
+Requires-Dist: catalyst (>22) ; extra == 'all'
+Requires-Dist: fastai ; extra == 'all'
+Requires-Dist: pytorch-lightning (>=1.9) ; extra == 'all'
+Requires-Dist: torch (<1.13) ; extra == 'all'
+Requires-Dist: scikit-learn ; extra == 'all'
+Requires-Dist: dvc (>=2.45.0) ; extra == 'all'
+Requires-Dist: matplotlib ; extra == 'all'
+Provides-Extra: catalyst
+Requires-Dist: catalyst (>22) ; extra == 'catalyst'
+Provides-Extra: dev
+Requires-Dist: pytest (==7.2.0) ; extra == 'dev'
+Requires-Dist: pytest-sugar (==0.9.5) ; extra == 'dev'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'dev'
+Requires-Dist: pytest-mock (==3.8.2) ; extra == 'dev'
+Requires-Dist: pylint (==2.15.0) ; extra == 'dev'
+Requires-Dist: pylint-plugin-utils (>=0.6) ; extra == 'dev'
+Requires-Dist: mypy (==0.981) ; extra == 'dev'
+Requires-Dist: numpy ; extra == 'dev'
+Requires-Dist: pillow ; extra == 'dev'
+Requires-Dist: scikit-learn ; extra == 'dev'
+Requires-Dist: dvc (>=2.45.0) ; extra == 'dev'
+Requires-Dist: matplotlib ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: mmcv ; extra == 'dev'
+Requires-Dist: tensorflow ; extra == 'dev'
+Requires-Dist: xgboost ; extra == 'dev'
+Requires-Dist: lightgbm ; extra == 'dev'
+Requires-Dist: transformers ; extra == 'dev'
+Requires-Dist: datasets ; extra == 'dev'
+Requires-Dist: catalyst (>22) ; extra == 'dev'
+Requires-Dist: fastai ; extra == 'dev'
+Requires-Dist: pytorch-lightning (>=1.9) ; extra == 'dev'
+Requires-Dist: torch (<1.13) ; extra == 'dev'
+Provides-Extra: dvc
+Requires-Dist: dvc (>=2.45.0) ; extra == 'dvc'
+Provides-Extra: fastai
+Requires-Dist: fastai ; extra == 'fastai'
+Provides-Extra: huggingface
+Requires-Dist: transformers ; extra == 'huggingface'
+Requires-Dist: datasets ; extra == 'huggingface'
+Provides-Extra: image
+Requires-Dist: numpy ; extra == 'image'
+Requires-Dist: pillow ; extra == 'image'
+Provides-Extra: lgbm
+Requires-Dist: lightgbm ; extra == 'lgbm'
+Provides-Extra: markdown
+Requires-Dist: matplotlib ; extra == 'markdown'
+Provides-Extra: mmcv
+Requires-Dist: mmcv ; extra == 'mmcv'
+Provides-Extra: plots
+Requires-Dist: scikit-learn ; extra == 'plots'
+Provides-Extra: pytorch_lightning
+Requires-Dist: pytorch-lightning (>=1.9) ; extra == 'pytorch_lightning'
+Requires-Dist: torch (<1.13) ; extra == 'pytorch_lightning'
+Provides-Extra: sklearn
+Requires-Dist: scikit-learn ; extra == 'sklearn'
+Provides-Extra: tests
+Requires-Dist: pytest (==7.2.0) ; extra == 'tests'
+Requires-Dist: pytest-sugar (==0.9.5) ; extra == 'tests'
+Requires-Dist: pytest-cov (==3.0.0) ; extra == 'tests'
+Requires-Dist: pytest-mock (==3.8.2) ; extra == 'tests'
+Requires-Dist: pylint (==2.15.0) ; extra == 'tests'
+Requires-Dist: pylint-plugin-utils (>=0.6) ; extra == 'tests'
+Requires-Dist: mypy (==0.981) ; extra == 'tests'
+Requires-Dist: numpy ; extra == 'tests'
+Requires-Dist: pillow ; extra == 'tests'
+Requires-Dist: scikit-learn ; extra == 'tests'
+Requires-Dist: dvc (>=2.45.0) ; extra == 'tests'
+Requires-Dist: matplotlib ; extra == 'tests'
+Requires-Dist: ipython ; extra == 'tests'
+Provides-Extra: tf
+Requires-Dist: tensorflow ; extra == 'tf'
+Provides-Extra: xgb
+Requires-Dist: xgboost ; extra == 'xgb'
+
+DVCLive
+-------
+
+|PyPI| |Status| |Python Version| |License|
+
+|Tests| |Codecov| |pre-commit| |Black|
+
+.. |PyPI| image:: https://img.shields.io/pypi/v/dvclive.svg
+   :target: https://pypi.org/project/dvclive/
+   :alt: PyPI
+.. |Status| image:: https://img.shields.io/pypi/status/dvclive.svg
+   :target: https://pypi.org/project/dvclive/
+   :alt: Status
+.. |Python Version| image:: https://img.shields.io/pypi/pyversions/dvclive
+   :target: https://pypi.org/project/dvclive
+   :alt: Python Version
+.. |License| image:: https://img.shields.io/pypi/l/dvclive
+   :target: https://opensource.org/licenses/Apache-2.0
+   :alt: License
+.. |Tests| image:: https://github.com/iterative/dvclive/workflows/Tests/badge.svg
+   :target: https://github.com/iterative/dvclive/actions?workflow=Tests
+   :alt: Tests
+.. |Codecov| image:: https://codecov.io/gh/iterative/dvclive/branch/main/graph/badge.svg
+   :target: https://app.codecov.io/gh/iterative/dvclive
+   :alt: Codecov
+.. |pre-commit| image:: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+   :target: https://github.com/pre-commit/pre-commit
+   :alt: pre-commit
+.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/psf/black
+   :alt: Black
+
+DVCLive is a Python library for logging machine learning metrics and other metadata in simple file formats, which is fully compatible with DVC.
+
+`Documentation <https://dvc.org/doc/dvclive>`_
+----------------------------------------------
+
+- `Get Started <https://dvc.org/doc/dvclive/get-started>`_
+- `How it Works <https://dvc.org/doc/dvclive/how-it-works>`_
+- `API Reference <https://dvc.org/doc/dvclive/api-reference>`_
+
+Installation
+------------
+
+You can install *dvclive* via pip_ from PyPI_:
+
+.. code:: console
+
+   $ pip install dvclive
+
+Depending on the *ML framework* you plan to use to train your model, you might need to specify
+one of the optional dependencies: ``mmcv``, ``tf``, ``xgb``. Or ``all`` to include them all.
+For example, for TensorFlow the command should look like this:
+
+.. code-block:: bash
+
+    pip install dvclive[tf]
+
+TensorFlow and its dependencies will be installed automatically.
+
+
+To install the development version, run:
+
+.. code-block:: bash
+
+   pip install git+https://github.com/iterative/dvclive
+
+Comparison to related technologies
+----------------------------------
+
+**DVCLive** is an *ML Logger*, similar to:
+
+- `MLFlow <https://mlflow.org/>`_
+- `Weights & Biases <https://wandb.ai/site>`_
+- `Neptune <https://neptune.ai/>`_
+
+The main difference with those *ML Loggers* is that **DVCLive** does not require any additional services or servers to run.
+
+Logged metrics and metadata are stored as plain text files that can be versioned by version control tools (i.e Git) or tracked as pointers to files in DVC storage.
+
+-----
+
+
+Contributing
+------------
+
+Contributions are very welcome.
+To learn more, see the `Contributor Guide`_.
+
+
+License
+-------
+
+Distributed under the terms of the `Apache 2.0 license`_,
+*dvclive* is free and open source software.
+
+
+Issues
+------
+
+If you encounter any problems,
+please `file an issue`_ along with a detailed description.
+
+
+.. _Apache 2.0 license: https://opensource.org/licenses/Apache-2.0
+.. _PyPI: https://pypi.org/
+.. _file an issue: https://github.com/iterative/dvclive/issues
+.. _pip: https://pip.pypa.io/
+.. github-only
+.. _Contributor Guide: CONTRIBUTING.rst
