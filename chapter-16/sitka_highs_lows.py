@@ -28,7 +28,7 @@ print(highs)
 plt.style.use("seaborn")
 fig, ax = plt.subplots()
 ax.plot(dates, highs, color="red")
-ax.plot(dates, lows, color="red")
+ax.plot(dates, lows, color="blue")
 
 # Format plot.
 # ax.set_title("Daily High Temperatures, July 2021", fontsize=24)
