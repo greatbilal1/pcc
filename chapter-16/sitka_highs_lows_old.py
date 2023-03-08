@@ -4,8 +4,8 @@ from datetime import datetime
 
 import matplotlib.pyplot as plt
 
-# path = Path("./weather_data/sitka_weather_2021_simple.csv")
-path = Path("./weather_data/death_valley_2021_simple.csv")
+path = Path("./weather_data/sitka_weather_2021_simple.csv")
+# path = Path("./weather_data/death_valley_2021_simple.csv")
 lines = path.read_text().splitlines()
 
 reader = csv.reader(lines)
@@ -17,17 +17,14 @@ print(lines[-1])
 dates, highs, lows = [], [], []
 for row in reader:
     current_date = datetime.strptime(row[2], "%Y-%m-%d")
-    # high = int(row[4])
-    # low = int(row[5])
-    try:
-        high = int(row[3])
-        low = int(row[4])
-    except ValueError:
-        print(f"Missing data for {current_date}.")
-    else:
-        dates.append(current_date)
-        highs.append(high)
-        lows.append(low)
+    high = int(row[4])
+    low = int(row[5])
+
+    print(f"Missing data for {current_date}.")
+
+    dates.append(current_date)
+    highs.append(high)
+    lows.append(low)
 
 print(highs)
 
