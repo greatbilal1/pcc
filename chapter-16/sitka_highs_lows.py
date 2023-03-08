@@ -23,13 +23,14 @@ for row in reader:
         high = int(row[3])
         low = int(row[4])
     except ValueError:
+        print(row)
         print(f"Missing data for {current_date}.")
     else:
         dates.append(current_date)
         highs.append(high)
         lows.append(low)
 
-print(highs)
+# print(highs)
 
 # Plot the high and low temperatures.
 plt.style.use("seaborn")
@@ -40,7 +41,8 @@ ax.fill_between(dates, highs, lows, facecolor="blue", alpha=0.1)
 
 # Format plot.
 # ax.set_title("Daily High Temperatures, July 2021", fontsize=24)
-ax.set_title("Daily High and Low Temperatures, 2021", fontsize=24)
+title = "Daily High and Low Temperatures, 2021\nDeath Valley, CA"
+ax.set_title(title, fontsize=20)
 ax.set_xlabel("", fontsize=16)
 fig.autofmt_xdate()
 ax.set_ylabel("Temperature (F)", fontsize=16)
