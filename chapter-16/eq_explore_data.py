@@ -9,6 +9,7 @@ all_eq_data = json.loads(contents)
 # Examine all earthquakes in the dataset.
 all_eq_dicts = all_eq_data["features"]
 print(len(all_eq_dicts))
+print(all_eq_dicts)
 
 # Create a more readable version of the data file.
 path = Path("./eq_data/readable_eq_data.geojson")
