@@ -37,7 +37,16 @@ for eq_dict in all_eq_dicts:
 
 title = "Global Earthquakes"
 # fig = px.scatter_geo(lat=lats, lon=lons, title=title)
-fig = px.scatter_geo(lat=lats, lon=lons, size=mags, title=title)
+fig = px.scatter_geo(
+    lat=lats,
+    lon=lons,
+    size=mags,
+    title=title,
+    color=mags,
+    color_continuous_scale="Viridis",
+    labels={"color": "Magnitude"},
+    projection="natural earth",
+)
 fig.show()
 
 # Create a more readable version of the data file.
