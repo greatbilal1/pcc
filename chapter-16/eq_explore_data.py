@@ -19,6 +19,7 @@ print(len(all_eq_dicts))
 mags = [eq_dict["properties"]["mag"] for eq_dict in all_eq_dicts]
 
 print(mags[:10])
+print(mags)
 
 # Create a more readable version of the data file.
 path = Path("./eq_data/readable_eq_data.geojson")
