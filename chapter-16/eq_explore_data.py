@@ -25,7 +25,7 @@ for eq_dict in all_eq_dicts:
     lat = eq_dict["geometry"]["coordinates"][1]
     mags.append(mag)
     lons.append(lon)
-    lats.append(lon)
+    lats.append(lat)
 
 
 print(mags[:10])
