@@ -1,5 +1,5 @@
 # Chapter 16
-Summary
+## Summary
 In this chapter, you learned how to work with real-world datasets. You pro-cessed CSV and GeoJSON files, and extracted the data you want to focus on. Using historical weather data, you learned more about working with Matplotlib, including how to use the datetime module and how to plot multi-ple data series on one chart. You plotted geographical data on a world map in Plotly, and learned to customize the style of the map.As you gain experience working with CSV and JSON files, you’ll be able to process almost any data you want to analyze. You can download most online datasets in either or both of these formats. By working with these formats, you’ll be able to learn how to work with other data formats more easily as well.
 
 In the next chapter, you’ll write programs that automatically gather their own data from online sources, and then you’ll create visualizations  of that data. These are fun skills to have if you want to program as a hobby and are critical skills if you’re interested in programming professionally.
