@@ -1,1 +1,5 @@
-\# Chapter 18
+# Chapter 18
+## Summary
+In this chapter, you learned how to start building a simple web app using the Django framework. You saw a brief project specification, installed Django to a virtual environment, set up a project, and checked that the project was set up correctly. You set up an app and defined models to rep-resent the data for your app. You learned about databases and how Django helps you migrate your database after you make a change to your models. You created a superuser for the admin site, and you used the admin site to enter some initial data.
+You also explored the Django shell, which allows you to work with your project’s data in a terminal session. You learned how to define URLs, cre-ate view functions, and write templates to make pages for your site. You also used template inheritance to simplify the structure of individual templates and make it easier to modify the site as the project evolves.
+In Chapter 19, you’ll make intuitive, user-friendly pages that allow users to add new topics and entries and edit existing entries without going through the admin site. You’ll also add a user registration system, allow-ing users to create an account and make their own learning log. This is the heart of a web app—the ability to create something that any number of users can interact with.
