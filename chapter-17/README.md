@@ -1,1 +1,3 @@
-\# Chapter 17
+# Chapter 17
+## Summary
+In this chapter, you learned how to use APIs to write self-contained pro-grams that automatically gather the data they need and use that data to create a visualization. You used the GitHub API to explore the most-starred Python projects on GitHub, and you also looked briefly at the Hacker News API. You learned how to use the Requests package to automatically issue an API call and how to process the results of that call. We also introduced some Plotly settings that further customize the appearance of the charts you generate.In the next chapter, you’ll use Django to build a web application as your final project.
