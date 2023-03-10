@@ -18,6 +18,8 @@ print(f"Complete results: {not response_dict['incomplete_results']}")
 repo_dicts = response_dict["items"]
 print(f"Repositories returned: {len(repo_dicts)}")
 
+# print(repo_dicts)
+
 # Examine the first repository.
 repo_dict = repo_dicts[0]
 print(f"\nKeys: {len(repo_dict)}")
