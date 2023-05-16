@@ -1,4 +1,4 @@
-# Python Crash Course 3rd Edition {#python_crash_course_3rd_edition}
+# Python Crash Course 3 Edition {#python_crash_course_3rd_edition}
 
 Welcome to the code and summary repository for the book \"Python Crash
 Course 3rd Edition\"!
